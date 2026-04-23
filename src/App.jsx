@@ -5,11 +5,11 @@ import Divider from "./components/sections/Divider";
 export default function App() {
   return (
     <div
-      style={{ fontFamily: "'Iceland', cursive" }}
+      style={{ fontFamily: "'Iceland', Ireland" }}
     >
       <Navbar />
       <Hero />
-      {/* <Divider /> */}
+      <Divider />
     </div>
   );
 }
