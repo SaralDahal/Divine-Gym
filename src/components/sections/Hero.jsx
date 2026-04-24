@@ -4,7 +4,7 @@ import Divider from "./Divider";
 
 export default function Hero() {
     return (
-        <section className="max-w-7xl mx-auto">
+        <section className=" container mx-auto">
 
             {/* Background Image */}
             <img
@@ -41,7 +41,7 @@ export default function Hero() {
                         <Button className="px-4 py-2 text-[#fff] font-[icebreg] bg-[#936F33] hover:scale-105 cursor-pointer transition-transform">
                             Start Training
                         </Button>
-                        <button className="px-4 py-2 text-[#fff] bg-[#982716] hover:scale-105 cursor-pointer transition-transform">
+                        <button className="px-4 py-2 text-[#fff] font-bold bg-[#982716] hover:scale-105 cursor-pointer transition-transform">
                             ↗
                         </button>
                     </div>
