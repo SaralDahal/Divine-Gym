@@ -4,7 +4,9 @@ import Divider from "./Divider";
 
 export default function Hero() {
     return (
-        <section className=" container mx-auto">
+        <section
+            id="home"
+            className=" container mx-auto">
 
             {/* Background Image */}
             <img
