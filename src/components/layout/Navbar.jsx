@@ -24,7 +24,7 @@ export default function Navbar() {
                         ))}
                     </div>
 
-                    <Button className="hidden lg:block bg-[#982716] text-[#fff] px-8 py-3 hover:scale-105 cursor-pointer transition-transform">
+                    <Button className="hidden lg:block bg-[#982716] text-[#fff] px-4 py-1 hover:scale-105 cursor-pointer transition-transform">
                         Join Now
                     </Button>
 
