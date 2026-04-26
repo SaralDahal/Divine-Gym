@@ -22,32 +22,54 @@ const ImageGallery = () => {
 
         {/* Image Gallery */}
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4 pt-4">
-          {/* Column 1 */}
+
+          {/* Column 1 (Mobile: first 2 images) */}
           <div className="grid gap-4">
-            <div>
-              <img className="h-full max-w-full rounded-xl" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg" alt="" />
-            </div>
+            <img
+              className="h-full max-w-full rounded-xl"
+              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg"
+              alt=""
+            />
+            <img
+              className="h-auto max-w-full rounded-xl md:hidden"
+              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-3.jpg"
+              alt=""
+            />
           </div>
 
-          {/* Column 2 */}
+          {/* Column 2 (Mobile: next 3 images) */}
           <div className="grid gap-4">
-            <div>
-              <img className="h-auto max-w-full rounded-xl" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-3.jpg" alt="" />
-            </div>
-            <div>
-              <img className="h-auto max-w-full rounded-xl" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-5.jpg" alt="" />
-            </div>
+            <img
+              className="h-auto max-w-full rounded-xl md:hidden"
+              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-5.jpg"
+              alt=""
+            />
+            <img
+              className="h-auto max-w-full rounded-xl"
+              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-7.jpg"
+              alt=""
+            />
+            <img
+              className="h-auto max-w-full rounded-xl"
+              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-8.jpg"
+              alt=""
+            />
           </div>
 
-          {/* Column 3 */}
-          <div className="grid gap-4">
-            <div>
-              <img className="h-auto max-w-full rounded-xl" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-7.jpg" alt="" />
-            </div>
-            <div>
-              <img className="h-auto max-w-full rounded-xl" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-8.jpg" alt="" />
-            </div>
+          {/* Column 3 (Desktop only) */}
+          <div className="hidden md:grid gap-4">
+            <img
+              className="h-auto max-w-full rounded-xl"
+              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-3.jpg"
+              alt=""
+            />
+            <img
+              className="h-auto max-w-full rounded-xl"
+              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-5.jpg"
+              alt=""
+            />
           </div>
+
         </div>
       </div>
     </div>
