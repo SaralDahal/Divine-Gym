@@ -4,6 +4,7 @@ import Divider from "./components/sections/Divider";
 import AboutPage from "./components/sections/AboutPage";
 import PricingPage from "./components/sections/PricingPage";
 import ImageGallery from "./components/sections/ImageGallery";
+import JoinPlan from "./components/sections/JoinPlan";
 
 export default function App() {
   return (
@@ -17,6 +18,7 @@ export default function App() {
       <AboutPage />
       <PricingPage />
       <ImageGallery />
+      <JoinPlan />
     </div >
   );
 }

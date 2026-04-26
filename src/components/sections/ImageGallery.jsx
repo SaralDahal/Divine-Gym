@@ -2,7 +2,7 @@ import React from "react";
 
 const ImageGallery = () => {
   return (
-    <div id="about" className=" min-h-screen bg-[#1A1A1A] text-white selection:bg-[#D13415]">
+    <div id="about" className="bg-[#1A1A1A] text-white pb-20">
       <div className="container mx-auto px-10 py-8 md:py-16flex flex-col">
         {/* Top letters */}
         <div className=" relative flex flex-col justify-content-center items-start gap-2 mb-8">
