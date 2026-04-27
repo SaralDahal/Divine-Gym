@@ -8,10 +8,7 @@ import JoinPlan from "./components/sections/JoinPlan";
 
 export default function App() {
   return (
-    <div
-      style={{ fontFamily: "'Iceland', Ireland" }
-      }
-    >
+    <div>
       <Navbar />
       <Hero />
       <Divider />
