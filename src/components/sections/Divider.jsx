@@ -81,6 +81,19 @@ export default function Divider() {
 
             </div> */}
 
+            {/* Divider */}
+            <div className="w-full leading-none -mt-1 overflow-hidden">
+                <svg
+                    className="block w-full h-10 md:h-20"
+                    viewBox="0 0 1437 71"
+                    preserveAspectRatio="none"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                >
+                    <path d="M-8 71H1437L-8 0V71Z" fill="#982716" />
+                </svg>
+            </div>
+
             {/* Cards Section */}
             <div className="max-w-7xl mx-auto py-10 relative">
 
