@@ -70,7 +70,7 @@ export default function AboutPage() {
                                         {title}
                                     </h3>
                                 </div>
-                                <p className="text-gray-500 text-sm leading-relaxed">
+                                <p className="text-gray-500 text-lg leading-relaxed">
                                     {description}
                                 </p>
                             </div>

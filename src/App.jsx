@@ -7,6 +7,7 @@ import ImageGallery from "./components/sections/ImageGallery";
 import JoinPlan from "./components/sections/JoinPlan";
 import ReviewSection from "./components/sections/ReviewSection";
 import ImageMarquee from "./components/sections/ImageMarquee";
+import PreFooter from "./components/sections/PreFooter";
 
 export default function App() {
   return (
@@ -20,6 +21,7 @@ export default function App() {
       <JoinPlan />
       <ReviewSection />
       <ImageMarquee />
+      <PreFooter />
     </div >
   );
 }
