@@ -26,7 +26,7 @@ function ReviewCard({ review, animating, direction }) {
 }
 
 
-export default function ReviewSection() {
+export default function Testmonial() {
     const [current, setCurrent] = useState(0);
     const [animating, setAnimating] = useState(false);
     const [direction, setDirection] = useState("next");
@@ -89,7 +89,7 @@ export default function ReviewSection() {
 
     return (
         <div
-            id="pricing"
+            id="testimonial"
             className="px-4 py-16 bg-cover bg-center bg-fixed relative"
             style={{
                 backgroundImage:

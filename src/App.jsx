@@ -5,9 +5,10 @@ import AboutPage from "./components/sections/AboutPage";
 import PricingPage from "./components/sections/PricingPage";
 import ImageGallery from "./components/sections/ImageGallery";
 import JoinPlan from "./components/sections/JoinPlan";
-import ReviewSection from "./components/sections/ReviewSection";
+import Testimonial from "./components/sections/Testimonial";
 import ImageMarquee from "./components/sections/ImageMarquee";
-import PreFooter from "./components/sections/PreFooter";
+import Contact from "./components/sections/Contact";
+import Footer from "./components/sections/Footer";
 
 export default function App() {
   return (
@@ -19,9 +20,10 @@ export default function App() {
       <PricingPage />
       <ImageGallery />
       <JoinPlan />
-      <ReviewSection />
+      <Testimonial />
       <ImageMarquee />
-      <PreFooter />
+      <Contact />
+      <Footer />
     </div >
   );
 }

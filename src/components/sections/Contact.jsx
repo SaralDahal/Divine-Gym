@@ -1,9 +1,9 @@
 import React from 'react'
 
-const PreFooter = () => {
+const Contact = () => {
     return (
         <div className="container mx-auto py-12 md:py-16  font-[Alan Sans]">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16">
+            <div id='contact' className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16">
 
                 {/* left column */}
                 <div className='flex flex-col gap-2 items-start justify-between'>
@@ -44,5 +44,5 @@ const PreFooter = () => {
     )
 }
 
-export default PreFooter
+export default Contact;
 
