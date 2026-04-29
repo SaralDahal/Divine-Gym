@@ -22,7 +22,7 @@ const Marquee = () => {
         img01, img02, img03, img04, img05,
     ];
     return (
-        <div className="overflow-x-hidden">
+        <div id="gallery" className="overflow-x-hidden">
             <MarqueeItem images={upperMarquee} from={0} to={"-100%"} />
             <MarqueeItem images={lowerMarquee} from={"-100%"} to={0} />
         </div>

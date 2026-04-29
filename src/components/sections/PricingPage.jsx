@@ -92,9 +92,9 @@ function PlanCard({ plan, highlighted }) {
                 <span className="text-gray-400 text-sm">{plan.period}</span>
             </div>
 
-            <button className="w-full bg-[#C0392B] hover:bg-[#a93226] transition-colors text-white rounded-md py-3.5 text-base font-bold mb-6 tracking-wide cursor-pointer border-none">
+            {/* <button className="w-full bg-[#C0392B] hover:bg-[#a93226] transition-colors text-white rounded-md py-3.5 text-base font-bold mb-6 tracking-wide cursor-pointer border-none">
                 Purchase Now
-            </button>
+            </button> */}
 
             <p className="text-white text-[13px] font-bold mb-3.5">
                 What&apos;s Included?
@@ -119,7 +119,7 @@ export default function PricingPage() {
     return (
         <div
             id="pricing"
-            className="min-h-screen bg-cover bg-center bg-fixed relative"
+            className="bg-cover bg-center bg-fixed relative"
             style={{
                 backgroundImage:
                     "url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1600&q=80')",

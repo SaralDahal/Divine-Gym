@@ -6,11 +6,12 @@ import MobileMenu from "./MobileMenu";
 
 export default function Navbar() {
     const [open, setOpen] = useState(false);
-
     return (
-        <nav className="container mx-auto px-4 fixed top-0 left-0 right-0 z-50">
-            <div className="max-w-7xl mx-auto px-6">
-                <div className="flex items-center justify-between h-20">
+        <nav className="fixed top-0 left-0 right-0 z-50">
+            {/* overlay */}
+            <div className="absolute inset-0 bg-[#000]/60 blur-b-xs -z-5" />
+            <div className="container mx-auto px-4 ">
+                <div className="max-w-7xl mx-auto flex flex-wrap items-center justify-between h-16">
                     <Logo />
                     <div className="hidden lg:flex items-center gap-8">
                         {NAV_ITEMS.map(item => (
@@ -36,7 +37,7 @@ export default function Navbar() {
                 </div>
             </div>
 
-            <MobileMenu open={open} />
+            <MobileMenu open={open} setOpen={setOpen} />
         </nav>
     );
 }

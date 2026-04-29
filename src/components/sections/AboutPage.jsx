@@ -116,9 +116,6 @@ export default function AboutPage() {
                 </div> */}
             </div>
 
-            <div className="fixed mx-auto bottom-0 opacity-[0.02] text-[20vw] font-black pointer-events-none select-none uppercase -mb-20 -mr-20 leading-none">
-                Fitness
-            </div>
         </div>
     );
 }
