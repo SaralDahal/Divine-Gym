@@ -7,7 +7,7 @@ const JoinPlan = () => {
 
                 <div className="text-center flex flex-col items-center gap-4">
 
-                    <h2 className="text-2xl md:text-4xl font-semibold text-[#982716] uppercase tracking-wide font-[aldrich]">
+                    <h2 className="text-2xl md:text-4xl font-semibold text-[#982716] font-[aldrich, regular]">
                         Join Our Membership
                     </h2>
 

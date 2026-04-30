@@ -16,7 +16,7 @@ export default function Hero() {
             />
 
             {/* Overlay */}
-            <div className="absolute inset-0 bg-[#000]/30 -z-5" />
+            <div className="absolute inset-0 bg-black/30 -z-5" />
 
             {/* Content */}
             <div className="relative z-10 px-8 py-20 w-full flex flex-col justify-between items-start h-screen">
