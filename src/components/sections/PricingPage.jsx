@@ -1,56 +1,6 @@
 "use client";
 import { useState } from "react";
-
-const plans = [
-    {
-        id: "basic",
-        label: "Basic",
-        name: "Basic Plan",
-        description: "Perfect for beginners who want essential gym access",
-        price: "NPR 1500",
-        period: "/ Month",
-        popular: false,
-        features: [
-            "Gym access during working hours",
-            "Cardio zone access",
-            "Basic strength equipment usage",
-            "Locker room access",
-            "Standard workout environment",
-        ],
-    },
-    {
-        id: "regular",
-        label: "Regular",
-        name: "Regular Plan",
-        description: "Ideal for consistent training and better progress.",
-        price: "NPR 3500",
-        period: "/ Month",
-        popular: true,
-        features: [
-            "Full-day gym access",
-            "Advanced strength & cardio equipment",
-            "Group workout sessions",
-            "Free fitness assessment",
-            "Locker & shower facilities",
-        ],
-    },
-    {
-        id: "premium",
-        label: "Premium",
-        name: "Premium Plan",
-        description: "Complete fitness experience with premium support.",
-        price: "NPR 5500",
-        period: "/ Month",
-        popular: false,
-        features: [
-            "All Regular plan benefits",
-            "Personal trainer guidance",
-            "Customized workout plan",
-            "Basic diet & nutrition guidance",
-            "Priority access to equipment & peak hours",
-        ],
-    },
-];
+import { plans } from "../constants/plans";
 
 function CheckIcon() {
     return (

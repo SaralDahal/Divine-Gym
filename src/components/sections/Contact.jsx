@@ -1,25 +1,8 @@
 import React from 'react'
 import Button from '../ui/Button';
+import { contactInfo } from '../constants/contact';
 
 const Contact = () => {
-    const contactInfo = [
-        {
-            title: "Address",
-            value: "Dharewal Galli, Biratnagar, Nepal, 56613",
-        },
-        {
-            title: "Phone",
-            value: "+977 976-5482000",
-        },
-        {
-            title: "Email",
-            value: "divinegym.official@gmail.com",
-        }, {
-            title: "Opening Hours",
-            value: "Everyday | 8 AM - 7 PM",
-        }
-    ];
-
     return (
         <div className="container mx-auto px-10 py-8 md:py-16 font-[Alan Sans]">
             <div id='contact' className="grid grid-cols-1 flex item-start md:grid-cols-2 gap-8 md:gap-16">

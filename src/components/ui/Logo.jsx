@@ -5,7 +5,7 @@ export default function Logo(classname) {
             <img
                 src={logo}
                 alt="Divine Gym Logo"
-                className={`w-15 h-15 object-contain ${classname}`}
+                className={`w-12 h-12 object-contain ${classname}`}
             />
         </a>
 
