@@ -50,7 +50,7 @@ export default function Divider() {
             </div> */}
 
             {/* Cards Section */}
-            <div className="max-w-7xl px-10 py-10 md:py-20">
+            <div className="max-w-7xl px-10 py-8 md:py-8 mx-auto">
                 {/* MOBILE SCROLL / DESKTOP GRID */}
                 <div
                     ref={scrollRef}

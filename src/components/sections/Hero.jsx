@@ -1,28 +1,26 @@
 import Button from "../ui/Button";
 import gymHero from "../../assets/gymHeroImg.png";
-import Divider from "./Divider";
 
 export default function Hero() {
     return (
         <section
             id="home"
-            className=" container mx-auto">
+            className="relative mx-auto min-h-screen overflow-hidden">
 
             {/* Background Image */}
             <img
                 src={gymHero}
                 alt="Gym Hero"
-                className="absolute inset-0 w-full h-full object-cover -z-10"
+                className="absolute inset-0 h-full w-full object-cover -z-10"
             />
 
             {/* Overlay */}
-            <div className="absolute inset-0 bg-black/30 -z-5" />
+            <div className="absolute inset-0 bg-black/30 -z-10" />
 
             {/* Content */}
-            <div className="relative z-10 px-8 py-20 w-full flex flex-col justify-between items-start h-screen">
-                <div />
+            <div className="px-8 pt-0 pb-8 w-full flex flex-col justify-evenly items-start h-screen">
                 <div>
-                    <p className="text-[#fff] text-xs mb-0 uppercase tacking-widest">
+                    <p className="text-[#fff] text-xs mb-0 uppercase tracking-widest">
                         DIVINEGYM.com
                     </p>
 
@@ -48,7 +46,6 @@ export default function Hero() {
                         </button>
                     </div>
                 </div>
-                {/* <Divider /> */}
             </div>
         </section >
     );
