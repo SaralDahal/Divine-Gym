@@ -1,6 +1,6 @@
 import Logo from "../ui/Logo";
 import { socialLinks, menuSections } from "../constants/footer";
-export default function Footer() {
+export default function MobileFooter() {
     return (
         <footer className=" md:hidden bg-[#0D2332] text-slate-50 pt-6 font-[Alan Sans]">
             <div className="container mx-auto px-10 py-4 md:py-16">
@@ -17,7 +17,7 @@ export default function Footer() {
                             <p className="text-slate-400 text-sm mt-2">
                                 Divine Gym is committed to helping you build a stronger, healthier, and more confident version of yourself through expert coaching, modern equipment, and a welcoming fitness community.
                             </p>
-                            <div className="flex gap-4 mt-4">
+                            <div className="flex gap-4 my-4">
                                 {socialLinks.map((social) => (
                                     <li key={social.label}>
                                         <a
@@ -38,10 +38,10 @@ export default function Footer() {
                                 ))}
                             </div>
                             {/* Links Grid Column */}
-                            <div className="min-[1200px]:col-span-2 grid grid-cols-2 lg:grid-cols-3 gap-y-12 gap-x-6 sm:gap-x-8">
+                            <div className=" grid grid-row-2 gap-y-12 gap-x-6 sm:gap-x-8">
                                 {menuSections.map((section) => (
                                     <div key={section.title} className="space-y">
-                                        <h3 className="text-gray-300 pb-2 text-sm font-semibold">
+                                        <h3 className="text-gray-300 pb-2 text-lg font-semibold">
                                             {section.title}
                                         </h3>
                                         <ul className="space-y-4 text-sm text-white font-normal">

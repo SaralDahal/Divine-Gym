@@ -92,9 +92,9 @@ function PlanCard({ plan, highlighted }) {
                 <span className="text-gray-400 text-sm">{plan.period}</span>
             </div>
 
-            {/* <button className="w-full bg-[#C0392B] hover:bg-[#a93226] transition-colors text-white rounded-md py-3.5 text-base font-bold mb-6 tracking-wide cursor-pointer border-none">
+            <button className="w-full bg-[#C0392B] hover:bg-[#a93226] transition-colors text-white rounded-md py-3.5 text-base font-bold mb-6 tracking-wide cursor-pointer border-none">
                 Purchase Now
-            </button> */}
+            </button>
 
             <p className="text-white text-[13px] font-bold mb-3.5">
                 What&apos;s Included?
@@ -143,6 +143,7 @@ export default function PricingPage() {
                     <div className="flex gap-6 max-w-5xl mx-auto items-stretch">
                         {plans.map((plan) => (
                             <PlanCard key={plan.id} plan={plan} highlighted={plan.popular} />
+
                         ))}
                     </div>
                 </div>

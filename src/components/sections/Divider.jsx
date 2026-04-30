@@ -5,17 +5,23 @@ import Carousel from "../layout/Carousel";
 
 export default function Divider() {
     const scrollRef = useRef(null);
+    const isScrolling = useRef(false);
 
     function scroll(direction) {
+        if (isScrolling.current) return;
         const el = scrollRef.current;
         if (!el) return;
 
-        const width = el.clientWidth;
+        const card = el.querySelector(":first-child > *");
+        const cardWidth = card ? card.offsetWidth : el.clientWidth;
 
+        isScrolling.current = true;
         el.scrollBy({
-            left: direction === "left" ? -width : width,
+            left: direction === "left" ? -cardWidth : cardWidth,
             behavior: "smooth",
         });
+
+        setTimeout(() => { isScrolling.current = false; }, 500);
     }
 
     function FeatureCard({ icon, title, description, className }) {
@@ -30,17 +36,8 @@ export default function Divider() {
 
     return (
         <section className="container mx-auto">
-
             {/* Divider */}
-            {/* <div className="relative w-full h-[60px]">
-                <svg width="100%" height="80" viewBox="0 0 1437 71" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M-8 71H1437L-8 0V71Z" fill="#982716" />
-                </svg>
-
-            </div> */}
-
-            {/* Divider */}
-            <div className="w-full leading-none -mt-1 overflow-hidden">
+            {/* <div className="w-full leading-none -mt-1 overflow-hidden">
                 <svg
                     className="block w-full h-10 md:h-20"
                     viewBox="0 0 1437 71"
@@ -50,22 +47,21 @@ export default function Divider() {
                 >
                     <path d="M-8 71H1437L-8 0V71Z" fill="#982716" />
                 </svg>
-            </div>
+            </div> */}
 
             {/* Cards Section */}
-            <div className="max-w-7xl mx-auto py-10 relative">
-
+            <div className="max-w-7xl px-10 py-10 md:py-20">
                 {/* MOBILE SCROLL / DESKTOP GRID */}
                 <div
                     ref={scrollRef}
-                    className="overflow-hidden md:overflow-visible"
+                    className="overflow-x-auto md:overflow-visible scrollbar-hide"
                 >
-                    <div className="flex snap-x snap-mandatory md:grid md:grid-cols-4">
+                    <div className="flex snap-x snap-mandatory min-w-full md:grid md:grid-cols-4">
                         {FEATURE_CARDS.map((card) => (
                             <FeatureCard
                                 key={card.id}
                                 {...card}
-                                className="min-w-full md:min-w-0 px-10 flex-wrap-0 snap-start p-6"
+                                className="min-w-full md:min-w-0 md:px-4 flex-wrap snap-start md:snap-none"
                             />
                         ))}
                     </div>
