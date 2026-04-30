@@ -1,6 +1,6 @@
 import React from "react";
 
-const ImageGallery = () => {
+const Facility = () => {
   return (
     <div id="facility" className="bg-[#1A1A1A] text-white pb-20">
       <div className="container mx-auto px-10 py-8 md:py-16flex flex-col">
@@ -76,5 +76,5 @@ const ImageGallery = () => {
   );
 };
 
-export default ImageGallery;
+export default Facility;
 

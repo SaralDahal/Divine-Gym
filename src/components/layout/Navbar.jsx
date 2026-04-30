@@ -31,7 +31,9 @@ const Navbar = () => {
 
     return (
         <div className={`sticky top-0 z-50 flex justify-center pt-4 transition-all duration-500 ease-in-out ${hasScrolled ? 'w-full' : 'w-full'}`}>
-            <nav className={`flex items-center justify-between border border-slate-700 mx-4 px-6 rounded-full text-white text-sm relative bg-black/80 backdrop-blur-md transition-all duration-500 ease-in-out ${hasScrolled ? 'w-full md:w-1/2 md:mx-auto' : 'w-full container mx-4'
+           {/* <nav className={`flex items-center justify-between border border-white/40 mx-4 px-6 rounded-full text-white text-sm relative bg-white/10 backdrop-blur-md shadow-lg shadow-black/10 transition-all duration-500 ease-in-out ${hasScrolled ? 'w-full md:w-1/2 md:mx-auto' : 'w-full container mx-4'
+                }`}> */}
+                    <nav className={`flex items-center justify-between border border-gray/60 mx-4 px-6 rounded-full text-white text-sm relative bg-black/20 backdrop-blur-md transition-all duration-500 ease-in-out ${hasScrolled ? 'w-full md:w-1/2 md:mx-auto' : 'w-full container mx-4'
                 }`}>
                 {/* Logo - Left */}
                 <a href="#home" className="flex items-center gap-2 py-2 flex-shrink-0">
@@ -57,7 +59,7 @@ const Navbar = () => {
                 {/* Hamburger Button */}
                 <button
                     onClick={() => setMobileOpen((o) => !o)}
-                    className="md:hidden text-gray-600"
+                    className="md:hidden text-white-600"
                 >
                     <svg
                         className="w-6 h-6"
@@ -85,7 +87,7 @@ const Navbar = () => {
                                 {link}
                             </a>
                         ))}
-                        <button className="bg-white hover:shadow-[0px_0px_30px_14px] shadow-[0px_0px_30px_7px] hover:shadow-white/50 shadow-white/50 text-black px-4 py-2 rounded-full text-sm font-medium hover:bg-slate-100 transition duration-300">
+                        <button className="bg-white hover:shadow-[0px_0px_30px_14px] shadow-[0px_0px_15px_8px] hover:shadow-white/50 shadow-white/50 text-black px-4 py-2 rounded-full text-sm font-medium hover:bg-slate-100 transition duration-300">
                             Get Started
                         </button>
                     </div>

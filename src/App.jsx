@@ -3,7 +3,7 @@ import Hero from "./components/sections/Hero";
 import Divider from "./components/sections/Divider";
 import AboutPage from "./components/sections/AboutPage";
 import PricingPage from "./components/sections/PricingPage";
-import ImageGallery from "./components/sections/ImageGallery";
+import Facility from "./components/sections/Facility";
 import JoinPlan from "./components/sections/JoinPlan";
 import Testimonial from "./components/sections/Testimonial";
 import ImageMarquee from "./components/sections/ImageMarquee";
@@ -18,7 +18,7 @@ export default function App() {
       <Divider />
       <AboutPage />
       <PricingPage />
-      <ImageGallery />
+      <Facility />
       <JoinPlan />
       <Testimonial />
       <ImageMarquee />
