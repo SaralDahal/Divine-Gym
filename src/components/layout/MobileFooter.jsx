@@ -1,6 +1,9 @@
+import { useState } from "react";
 import Logo from "../ui/Logo";
 import { socialLinks, menuSections } from "../constants/footer";
+import WhatsappIcon from "../ui/WhatsappIcon";
 export default function MobileFooter() {
+    const [text, setText] = useState("");
     return (
         <footer className=" md:hidden bg-[#0D2332] text-slate-50 pt-6 font-[Alan Sans]">
             <div className="container mx-auto px-10 py-4 md:py-16">
@@ -65,15 +68,19 @@ export default function MobileFooter() {
                                 </div>
                                 <div className="flex flex-col gap-3">
                                     <textarea
-                                        placeholder="Enter a Message...."
+                                        placeholder="Enter a Message...." name="text"
+                                        value={text}
+                                        onChange={(e) => setText(e.target.value)}
                                         className="text-slate-50 text-sm w-full bg-[#0D2332] border border-[#982716] p-3 rounded-lg rounded-tl-none outline-none focus-within:outline-none focus-within:ring-2 focus-within:ring-blue-500 resize-none h-32"
                                     />
-                                    <button
-                                        type="button"
-                                        className="py-2 px-3.5 text-sm rounded-md font-semibold cursor-pointer tracking-wide text-white bg-[#982716] hover:bg-red-700 transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500"
-                                    >
-                                        Send Message →
-                                    </button>
+                                    <a href={`https://wa.me/+9779811049592?text=${encodeURIComponent(text)}`} target="_blank" rel="noopener noreferrer">
+                                        <button
+                                            type="button"
+                                            className="py-2 px-3.5 text-sm rounded-md font-semibold cursor-pointer tracking-wide text-white bg-[#982716] hover:bg-red-700 transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500"
+                                        >
+                                            Send Message <WhatsappIcon />
+                                        </button>
+                                    </a>
                                 </div>
                             </div>
                         </div>
