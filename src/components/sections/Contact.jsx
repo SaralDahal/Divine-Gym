@@ -21,12 +21,12 @@ const Contact = () => {
               Start your fitness journey with a free first session and see the
               difference. Our coaches will tailor a plan to your goals.
             </p>
-
-            <button className="hidden lg:block bg-[#982716] text-white text-lg md:text-xl py-3 px-6 hover:bg-[#7a1f12] cursor-pointer transition-colors duration-300 flex items-center gap-2 rounded-md mt-4">
-              Contact us
-              <svg
-                className="inline-block pl-1"
-                width="20"
+            <a href="https://wa.me/+9779811049592" target="_blank" rel="noopener noreferrer">
+              <button className="hidden lg:block bg-[#982716] text-white text-lg md:text-xl py-3 px-6 hover:bg-[#7a1f12] cursor-pointer transition-colors duration-300 flex items-center gap-2 rounded-md mt-4">
+                Contact us
+                <svg
+                  className="inline-block pl-1"
+                  width="20"
                 height="20"
                 viewBox="0 0 20 20"
                 fill="none"
@@ -39,6 +39,7 @@ const Contact = () => {
                 />
               </svg>
             </button>
+            </a>
           </div>
 
           {/* right column */}
