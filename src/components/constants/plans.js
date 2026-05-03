@@ -3,7 +3,7 @@ export const plans = [
         id: "basic",
         label: "Basic",
         name: "Basic Plan",
-        description: "Perfect for beginners who want essential gym access",
+        description: "Perfect for beginners to start their fitness journey.",
         price: "NPR 1500",
         period: "/ Month",
         popular: false,
