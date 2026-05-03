@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import Logo from "../ui/Logo";
 
 const NavLink = ({ href = "#", children }) => (
@@ -18,6 +18,7 @@ const NavLink = ({ href = "#", children }) => (
 const Navbar = () => {
     const [mobileOpen, setMobileOpen] = useState(false);
     const [hasScrolled, setHasScrolled] = useState(false);
+    const navRef = useRef(null);
     const links = ["About", "Pricing", "Facility", "Testimonials", "Gallery", "Contact"];
 
     useEffect(() => {
@@ -29,11 +30,22 @@ const Navbar = () => {
         return () => window.removeEventListener("scroll", handleScroll);
     }, []);
 
+    useEffect(() => {
+        const handleClickOutside = (event) => {
+            if (mobileOpen && navRef.current && !navRef.current.contains(event.target)) {
+                setMobileOpen(false);
+            }
+        };
+
+        document.addEventListener("mousedown", handleClickOutside);
+        return () => document.removeEventListener("mousedown", handleClickOutside);
+    }, [mobileOpen]);
+
     return (
         <div className={`fixed z-50 flex justify-center pt-4 transition-all duration-500 ease-in-out ${hasScrolled ? 'w-full' : 'w-full'}`}>
             {/* <nav className={`flex items-center justify-between border border-white/40 mx-4 px-6 rounded-full text-white text-sm relative bg-white/10 backdrop-blur-md shadow-lg shadow-black/10 transition-all duration-500 ease-in-out ${hasScrolled ? 'w-full md:w-1/2 md:mx-auto' : 'w-full container mx-4'
                 }`}> */}
-            <nav className={`flex items-center justify-between border border-gray/60 mx-4 px-6 py-2 rounded-full text-white text-sm relative bg-black/20 backdrop-blur-md transition-all duration-500 ease-in-out ${hasScrolled ? 'w-full md:w-1/2 md:mx-auto' : 'w-full container mx-4'
+            <nav ref={navRef} className={`flex items-center justify-between border border-gray/60 mx-4 px-6 py-2 rounded-full text-white text-sm relative bg-black/20 backdrop-blur-md transition-all duration-500 ease-in-out ${hasScrolled ? 'w-full md:w-1/2 md:mx-auto' : 'w-full container mx-4'
                 }`}>
                 {/* Logo - Left */}
                     <Logo />
