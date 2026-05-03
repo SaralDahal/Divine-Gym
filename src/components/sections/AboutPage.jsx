@@ -1,6 +1,7 @@
 import React from "react";
 import { Dumbbell } from "lucide-react";
 import { features } from "../constants/features";
+import dumbellDesktop from "../../assets/dumbell-desktop.png";
 
 
 export default function AboutPage() {
@@ -54,41 +55,23 @@ export default function AboutPage() {
                 </div>
 
                 {/* Right Collage Side */}
-                {/* <div className="flex-1 relative w-full h-[500px] md:h-[600px] mt-12 lg:mt-0">
+                <div className="flex-1 relative w-full h-[500px] md:h-[600px] mt-12 lg:mt-0">
                     <div className="absolute top-0 right-0 w-full h-full flex items-center justify-center">
-                        <Dumbbell className="absolute top-0 right-1/4 text-white opacity-50 -rotate-45" size={40} />
-                        <Dumbbell className="absolute bottom-0 left-1/4 text-white opacity-50 -rotate-45" size={40} />
-
+                        
                         <div className="relative w-full h-full flex items-center justify-center">
-                            <div className="absolute top-[10%] left-[10%] w-48 h-64 border-2 border-white/20 transform -rotate-12 overflow-hidden shadow-2xl">
+                            {/* <div className="absolute top-[10%] left-[10%] w-48 h-64 border-2 border-white/20 transform -rotate-12 overflow-hidden shadow-2xl"> */}
                                 <img
-                                    src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=2070&auto=format&fit=crop"
+                                    src={dumbellDesktop}
                                     alt="Fitness 1"
                                     className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
                                 />
-                            </div>
+                            {/* </div> */}
 
-                            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-56 h-72 border-2 border-[#D13415] transform rotate-6 overflow-hidden z-20 shadow-2xl">
-                                <img
-                                    src="https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?q=80&w=2069&auto=format&fit=crop"
-                                    alt="Fitness 2"
-                                    className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
-                                />
-                            </div>
-
-                            <div className="absolute bottom-[10%] right-[10%] w-44 h-60 border-2 border-white/20 transform -rotate-6 overflow-hidden z-10 shadow-2xl">
-                                <img
-                                    src="https://images.unsplash.com/photo-1571731956622-39cb495262f7?q=80&w=1974&auto=format&fit=crop"
-                                    alt="Fitness 3"
-                                    className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
-                                />
-                            </div>
-
-                            <div className="absolute top-0 right-0 w-32 h-32 border-t-2 border-r-2 border-[#D13415] -m-4 opacity-30"></div>
-                            <div className="absolute bottom-0 left-0 w-32 h-32 border-b-2 border-l-2 border-[#D13415] -m-4 opacity-30"></div>
+                            {/* <div className="absolute top-0 right-0 w-32 h-32 border-t-2 border-r-2 border-[#D13415] -m-4 opacity-30"></div>
+                            <div className="absolute bottom-0 left-0 w-32 h-32 border-b-2 border-l-2 border-[#D13415] -m-4 opacity-30"></div> */}
                         </div>
                     </div>
-                </div> */}
+                </div>
             </div>
 
         </div>
