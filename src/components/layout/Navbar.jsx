@@ -36,9 +36,8 @@ const Navbar = () => {
             <nav className={`flex items-center justify-between border border-gray/60 mx-4 px-6 py-2 rounded-full text-white text-sm relative bg-black/20 backdrop-blur-md transition-all duration-500 ease-in-out ${hasScrolled ? 'w-full md:w-1/2 md:mx-auto' : 'w-full container mx-4'
                 }`}>
                 {/* Logo - Left */}
-                <a href="#home" className="flex items-center flex-shrink-0">
                     <Logo />
-                </a>
+
 
                 {/* Desktop Links - Center */}
                 <div className="hidden md:flex items-center gap-6 flex-1 justify-center">

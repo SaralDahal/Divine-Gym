@@ -1,4 +1,3 @@
-import React from "react";
 import Button from "../ui/Button";
 import { contactInfo } from "../constants/contact";
 
@@ -8,14 +7,14 @@ const Contact = () => {
       <div className="container mx-auto px-10 py-8 md:pt-16 font-[Alan Sans]">
         <div
           id="contact"
-          className="grid grid-cols-1 flex item-start md:grid-cols-2 gap-8 md:gap-16"
+          className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16"
         >
           {/* left column */}
           <div className="flex flex-col gap-1 items-start justify-between">
-            <p className="text-2xl md:text-5xl font-medium  text-[#000] uppercase tracking-wide">
+            <p className="text-2xl md:text-5xl font-medium text-[#000] uppercase tracking-wide">
               Get started <span className="text-[#982716]">today</span>
             </p>
-            <p className=" text-xl md:text-5xl font-medium text-[#936F33] tracking-wide">
+            <p className="text-xl md:text-5xl font-medium text-[#936F33] tracking-wide">
               First Class Discount
             </p>
             <p className="text-sm md:text-lg font-medium text-[#818181] tracking-wide">
@@ -23,7 +22,7 @@ const Contact = () => {
               difference. Our coaches will tailor a plan to your goals.
             </p>
 
-            <button className=" hidden lg:block bg-[#982716] text-white text-lg md:text-xl py-3 px-6 hover:bg-[#7a1f12] cursor-pointer transition-colors duration-300 flex items-center gap-2 rounded-md mt-4">
+            <button className="hidden lg:block bg-[#982716] text-white text-lg md:text-xl py-3 px-6 hover:bg-[#7a1f12] cursor-pointer transition-colors duration-300 flex items-center gap-2 rounded-md mt-4">
               Contact us
               <svg
                 className="inline-block pl-1"
@@ -43,7 +42,7 @@ const Contact = () => {
           </div>
 
           {/* right column */}
-          <div className="flex flex-col align-self md:text-right">
+          <div className="flex flex-col md:text-right">
             {contactInfo.map((item, index) => (
               <div key={index}>
                 <h3 className="text-[#936F33] pt-3 text-2xl md:text-3xl">
@@ -56,7 +55,7 @@ const Contact = () => {
             ))}
           </div>
 
-          <button className="lg:hidden bg-[#982716] text-[#fff] px-4 py-2 item-start">
+          <button className="lg:hidden bg-[#982716] text-[#fff] px-4 py-2 self-start">
             Contact us
             <svg
               className="inline-block pl-2"
@@ -75,19 +74,6 @@ const Contact = () => {
           </button>
         </div>
       </div>
-      {/* <svg
-        //   width="402"
-        //   height="201"
-        viewBox="0 0 402 201"
-        className="w-full h-200 mt-8 md:mt-16"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M5.08861 6.8682C4.86245 5.859 1.60197 1.8689 0 0V201H402V50.4603C400.445 49.1987 396.544 47.2925 393.378 49.7594C389.42 52.8431 388.289 50.4603 380.939 50.4603C373.589 50.4603 376.133 46.8159 368.783 50.4603C362.903 53.3757 356.721 52.7029 354.365 52.0021C336.696 45.9749 329.77 48.6381 326.943 49.7594C324.116 50.8807 326.378 47.5167 313.515 48.6381C300.652 49.7594 298.956 61.954 296.27 59.0105C294.122 56.6556 288.402 58.0293 285.81 59.0105C279.732 56.908 276.34 61.2531 268.424 60.272C260.508 59.2908 242.981 61.2531 240.719 63.636C238.458 66.0188 228.422 67.5607 227.15 65.1778C225.878 62.795 220.789 58.4498 217.255 62.3745C213.722 66.2992 211.601 68.2615 205.947 69.9435C200.298 71.6241 199.729 71.2057 191.55 65.1928L191.53 65.1778C183.331 59.1506 174.426 65.318 172.306 61.2531C170.186 57.1883 168.207 57.3285 167.217 55.2259C166.228 53.1234 158.03 54.1046 155.768 51.0209C153.506 47.9372 148.276 45.8347 140.502 48.4979C132.728 51.1611 132.869 48.7782 131.597 51.0209L131.585 51.0426C130.319 53.2735 129.454 54.8 122.268 53.1234C115.059 51.4414 116.614 49.4791 106.013 51.8619C95.4114 54.2448 88.9093 44.1527 83.8207 47.2364C78.7321 50.3201 71.0992 47.6569 66.4346 44.1527C61.77 40.6485 59.6498 42.0502 56.8228 42.751C53.9958 43.4519 46.9283 41.2092 39.7194 40.228C32.5105 39.2469 36.0443 45.8347 26.8565 45.6946C19.5063 45.5824 18.5169 44.6199 18.9409 44.1527C18.2342 36.5837 17.1034 39.8075 13.711 34.341C10.3186 28.8745 8.19831 32.9393 5.79536 26.0711C3.39241 19.2029 5.37131 8.12971 5.08861 6.8682Z"
-          fill="#0D2332"
-        />
-      </svg> */}
     </>
   );
 };

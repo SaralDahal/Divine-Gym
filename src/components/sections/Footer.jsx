@@ -45,7 +45,7 @@ export default function Footer() {
             {/* Links Grid Column */}
             <div className="min-[1200px]:col-span-2 grid grid-cols-2 lg:grid-cols-3 gap-y-12 gap-x-6 sm:gap-x-8">
               {menuSections.map((section) => (
-                <div key={section.title} className="space-y">
+                <div key={section.title} className="space-y-4">
                   <h3 className="text-white pb-2 text-sm font-semibold">
                     {section.title}
                   </h3>
@@ -64,18 +64,18 @@ export default function Footer() {
                 </div>
               ))}
               {/* Reach Us */}
-              <div class="max-lg:col-span-full max-w-md">
-                  <div class="text-slate-50 bg-[#982716] px-4 py-2 rounded-tl-lg inline-block text-sm font-semibold">
-                    Reach Us
-                  </div>
-                <div class="flex flex-col gap-3">
+              <div className="max-lg:col-span-full max-w-md">
+                <div className="text-slate-50 bg-[#982716] px-4 py-2 rounded-tl-lg inline-block text-sm font-semibold">
+                  Reach Us
+                </div>
+                <div className="flex flex-col gap-3">
                   <textarea
                     placeholder="Enter a Message...."
-                    class="text-slate-50 text-sm w-full bg-[#0D2332] border border-[#982716] p-3 rounded-lg rounded-tl-none outline-none focus-within:outline-none focus-within:ring-2 focus-within:ring-blue-500 resize-none h-32"
+                    className="text-slate-50 text-sm w-full bg-[#0D2332] border border-[#982716] p-3 rounded-lg rounded-tl-none outline-none focus-within:outline-none focus-within:ring-2 focus-within:ring-blue-500 resize-none h-32"
                   />
                   <button
                     type="button"
-                    class="py-2 px-3.5 text-sm rounded-md font-semibold cursor-pointer tracking-wide text-white bg-[#982716] hover:bg-red-700 transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500"
+                    className="py-2 px-3.5 text-sm rounded-md font-semibold cursor-pointer tracking-wide text-white bg-[#982716] hover:bg-red-700 transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500"
                   >
                     Send Message →
                   </button>

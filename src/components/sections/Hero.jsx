@@ -6,18 +6,18 @@ export default function Hero() {
     return (
         <section
             id="home"
-            className="relative min-h-screen overflow-hidden ">
-                <Navbar /> 
+            className="relative min-h-screen overflow-hidden">
+                <Navbar />
 
             {/* Background Image */}
             <img
                 src={gymHero}
                 alt="Gym Hero"
-                className="absolute inset-0 h-full w-full object-cover -z-10 object-contain"
+                className="absolute inset-0 h-full w-full object-cover -z-10"
             />
 
             {/* Overlay */}
-            <div className="absolute inset-0 bg-black/30 -z-10" />
+            <div className="absolute inset-0 bg-black/30 -z-5" />
 
             {/* Content */}
             <div className=" container mx-auto px-8 pt-0 pb-8 w-full flex flex-col justify-evenly items-start h-screen">

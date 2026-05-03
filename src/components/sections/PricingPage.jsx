@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import { plans } from "../constants/plans";
+import img from "../../assets/imageMarquee/5.jpeg";
 
 function CheckIcon() {
     return (
@@ -69,10 +70,10 @@ export default function PricingPage() {
     return (
         <div
             id="pricing"
-            className="bg-cover bg-center bg-fixed relative"
+            className="bg-cover bg-center bg-local relative"
             style={{
                 backgroundImage:
-                    "url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1600&q=80')",
+                    `url('${img}')`,
             }}
         >
             {/* Dark overlay */}

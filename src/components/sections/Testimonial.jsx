@@ -17,7 +17,7 @@ export default function Testimonial() {
             setTimeout(() => {
                 setCurrent(index);
                 setAnimating(false);
-            }, 300);
+            }, 30);
         },
         [animating],
     );
@@ -43,7 +43,7 @@ export default function Testimonial() {
     return (
         <div
             id="testimonials"
-            className="px-4 py-16 bg-cover bg-center bg-fixed relative z-10"
+            className="px-4 py-20 bg-cover bg-center bg-local relative z-10"
             style={{
                 backgroundImage: `url('${img}')`,
             }}
@@ -55,7 +55,7 @@ export default function Testimonial() {
             <div className="relative z-10 mx-auto text-center">
                 {/* Review Card */}
                 <div
-                    className={`px-8 py-10 text-center transition-all duration-300 ${
+                    className={`px-8 py-20 text-center transition-all duration-300 ${
                         animating
                             ? direction === "next"
                                 ? "opacity-0 translate-x-6"
