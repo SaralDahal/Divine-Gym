@@ -89,7 +89,7 @@ export default function Testmonial() {
 
     return (
         <div
-            id="testimonial"
+            id="testimonials"
             className="px-4 py-16 bg-cover bg-center bg-fixed relative"
             style={{
                 backgroundImage:

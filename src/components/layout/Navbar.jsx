@@ -30,13 +30,13 @@ const Navbar = () => {
     }, []);
 
     return (
-        <div className={`sticky top-0 z-50 flex justify-center pt-4 transition-all duration-500 ease-in-out ${hasScrolled ? 'w-full' : 'w-full'}`}>
+        <div className={`fixed z-50 flex justify-center pt-4 transition-all duration-500 ease-in-out ${hasScrolled ? 'w-full' : 'w-full'}`}>
             {/* <nav className={`flex items-center justify-between border border-white/40 mx-4 px-6 rounded-full text-white text-sm relative bg-white/10 backdrop-blur-md shadow-lg shadow-black/10 transition-all duration-500 ease-in-out ${hasScrolled ? 'w-full md:w-1/2 md:mx-auto' : 'w-full container mx-4'
                 }`}> */}
-            <nav className={`flex items-center justify-between border border-gray/60 mx-4 px-6 rounded-full text-white text-sm relative bg-black/20 backdrop-blur-md transition-all duration-500 ease-in-out ${hasScrolled ? 'w-full md:w-1/2 md:mx-auto' : 'w-full container mx-4'
+            <nav className={`flex items-center justify-between border border-gray/60 mx-4 px-6 py-2 rounded-full text-white text-sm relative bg-black/20 backdrop-blur-md transition-all duration-500 ease-in-out ${hasScrolled ? 'w-full md:w-1/2 md:mx-auto' : 'w-full container mx-4'
                 }`}>
                 {/* Logo - Left */}
-                <a href="#home" className="flex items-center gap-2 py-2 flex-shrink-0">
+                <a href="#home" className="flex items-center flex-shrink-0">
                     <Logo />
                 </a>
 
@@ -56,7 +56,7 @@ const Navbar = () => {
                     </button>
                 </div>
 
-                {/* Hamburger Button */}
+                {/* Hamburger Button for mobile */}
                 <button
                     onClick={() => setMobileOpen((o) => !o)}
                     className="md:hidden text-white-600"

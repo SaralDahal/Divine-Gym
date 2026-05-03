@@ -1,24 +1,26 @@
 import Button from "../ui/Button";
 import gymHero from "../../assets/gymHeroImg.png";
+import Navbar from "../layout/Navbar";
 
 export default function Hero() {
     return (
         <section
             id="home"
-            className="relative mx-auto min-h-screen overflow-hidden">
+            className="relative min-h-screen overflow-hidden ">
+                <Navbar /> 
 
             {/* Background Image */}
             <img
                 src={gymHero}
                 alt="Gym Hero"
-                className="absolute inset-0 h-full w-full object-cover -z-10"
+                className="absolute inset-0 h-full w-full object-cover -z-10 object-contain"
             />
 
             {/* Overlay */}
             <div className="absolute inset-0 bg-black/30 -z-10" />
 
             {/* Content */}
-            <div className="px-8 pt-0 pb-8 w-full flex flex-col justify-evenly items-start h-screen">
+            <div className=" container mx-auto px-8 pt-0 pb-8 w-full flex flex-col justify-evenly items-start h-screen">
                 <div>
                     <p className="text-[#fff] text-xs mb-0 uppercase tracking-widest">
                         DIVINEGYM.com
