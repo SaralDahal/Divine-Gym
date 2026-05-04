@@ -26,9 +26,6 @@ export default function Testimonial() {
         goTo((current + 1) % reviews.length, "next");
     }, [current, goTo]);
 
-    const prev = useCallback(() => {
-        goTo((current - 1 + reviews.length) % reviews.length, "prev");
-    }, [current, goTo]);
 
     // Auto-scroll every 3 seconds
     useEffect(() => {

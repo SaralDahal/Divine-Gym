@@ -18,7 +18,7 @@ const JoinPlan = () => {
                             <p className="text-2xl font-normal sm:text-2xl md:text-4xl tracking-narrow text-black">
                                 Build the body you've always wanted
                             </p>
-                            <p className="text-sm font-bold sm:text-bold md:text-2xl text-black">
+                            <p className="text-sm md:text-xl text-black">
                                 Join a community of driven individuals with world-class coaching, cutting-edge equipment, and flexible plans designed around your life.
                             </p>
                         </div>

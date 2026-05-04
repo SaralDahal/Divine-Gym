@@ -1,29 +1,8 @@
-import { useRef, useState } from "react";
+import { useRef } from "react";
 import { FEATURE_CARDS } from "../constants/featureCard";
-import Carousel from "../layout/Carousel";
-
 
 export default function Divider() {
     const scrollRef = useRef(null);
-    const isScrolling = useRef(false);
-
-    function scroll(direction) {
-        if (isScrolling.current) return;
-        const el = scrollRef.current;
-        if (!el) return;
-
-        const card = el.querySelector(":first-child > *");
-        const cardWidth = card ? card.offsetWidth : el.clientWidth;
-
-        isScrolling.current = true;
-        el.scrollBy({
-            left: direction === "left" ? -cardWidth : cardWidth,
-            behavior: "smooth",
-        });
-
-        setTimeout(() => { isScrolling.current = false; }, 500);
-    }
-
     function FeatureCard({ icon, title, description, className }) {
         return (
             <div className={className}>
@@ -50,7 +29,7 @@ export default function Divider() {
             </div> */}
 
             {/* Cards Section */}
-            <div className="max-w-7xl px-10 py-8 md:py-8 mx-auto">
+            <div className="max-w-7xl px-10 py-12 md:py-8 mx-auto">
                 {/* MOBILE SCROLL / DESKTOP GRID */}
                 <div
                     ref={scrollRef}

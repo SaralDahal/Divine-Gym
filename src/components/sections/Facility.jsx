@@ -1,6 +1,6 @@
 const Facility = () => {
   return (
-    <div id="facility" className="bg-[#1A1A1A] text-white pb-20">
+    <div id="facility" className="bg-[#1A1A1A] text-white py-16">
       <div className="container mx-auto px-10 py-8 md:py-16 flex flex-col">
         {/* Top letters */}
         <div className="relative flex flex-col justify-center items-start gap-2 mb-8">
