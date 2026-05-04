@@ -39,7 +39,7 @@ function PlanCard({ plan, highlighted }) {
             </p>
 
             <div className="flex items-baseline gap-1.5 mb-5">
-                <span className="text-white text-3xl font-extrabold">{plan.price}</span>
+                <span className="text-white text-2xl font-extrabold">{plan.price}</span>
                 <span className="text-gray-400 text-sm">{plan.period}</span>
             </div>
 

@@ -1,7 +1,7 @@
 const JoinPlan = () => {
     return (
         <div>
-            <div className="bg-[#F5F5F5] ">
+            <div className="bg-gray-200">
                 <div className="container mx-auto py-12 md:py-20 px-4 text-center flex flex-col items-center gap-4">
                     <h2 className="text-2xl md:text-4xl font-semibold text-[#982716] tracking-narrow">
                         Join Our Membership
@@ -18,7 +18,7 @@ const JoinPlan = () => {
                             <p className="text-2xl font-normal sm:text-2xl md:text-4xl tracking-narrow text-black">
                                 Build the body you've always wanted
                             </p>
-                            <p className="text-sm md:text-xl text-black">
+                            <p className="text-sm md:text-normal text-black">
                                 Join a community of driven individuals with world-class coaching, cutting-edge equipment, and flexible plans designed around your life.
                             </p>
                         </div>

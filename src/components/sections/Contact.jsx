@@ -5,7 +5,7 @@ import WhatsappIcon from "../ui/WhatsappIcon";
 const Contact = () => {
   return (<>
         
-      <div className="bg-[#F5F5F5] relative overflow-hidden">
+      <div className="bg-gray-200 relative overflow-hidden pb-0">
         <div
           id="contact"
           className="container mx-auto px-10 pt-8 md:pt-16 relative z-10 grid grid-cols-1 md:grid-cols-2"

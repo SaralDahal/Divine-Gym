@@ -14,7 +14,7 @@ export default function Divider() {
     }
 
     return (
-        <section className=" bg-gray-200">
+        <section className="bg-gray-200">
             {/* Cards Section */}
             <div className="max-w-7xl px-10 py-6 md:py-10 mx-auto">
                 {/* MOBILE SCROLL / DESKTOP GRID */}

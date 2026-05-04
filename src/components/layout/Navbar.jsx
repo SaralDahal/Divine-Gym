@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import Logo from "../ui/Logo";
 
 const NavLink = ({ href = "#", children }) => (
@@ -86,23 +87,34 @@ const Navbar = () => {
                 </button>
 
                 {/* Mobile Menu */}
-                {mobileOpen && (
-                    <div className="absolute top-20 left-0 bg-black w-full flex flex-col items-center gap-4 py-6 z-50">
-                        {links.map((link) => (
-                            <a
-                                key={link}
-                                className="hover:text-indigo-600 text-base"
-                                href={`#${link.toLowerCase()}`}
-                                onClick={() => setMobileOpen(false)}
-                            >
-                                {link}
-                            </a>
-                        ))}
-                        <button className="bg-[#982716] hover:scale-105 cursor-pointer transition-transform px-4 py-2 rounded-full text-sm font-medium transition duration-300">
-                            Get Started
-                        </button>
-                    </div>
-                )}
+
+
+                <AnimatePresence>
+                    {mobileOpen && (
+                        <motion.div
+                            initial={{ x: "100%", opacity: 0 }}
+                            animate={{ x: 0, opacity: 1 }}
+                            exit={{ x: "100%", opacity: 0 }}
+                            transition={{ duration: 0.4, ease: "easeInOut" }}
+                            className="absolute top-20 left-0 bg-black w-full flex flex-col items-center gap-4 py-6 z-50"
+                        >
+                            {links.map((link) => (
+                                <a
+                                    key={link}
+                                    className="hover:text-indigo-600 text-base"
+                                    href={`#${link.toLowerCase()}`}
+                                    onClick={() => setMobileOpen(false)}
+                                >
+                                    {link}
+                                </a>
+                            ))}
+
+                            <button className="bg-[#982716] hover:scale-105 cursor-pointer transition-transform px-4 py-2 rounded-full text-sm font-medium duration-300">
+                                Get Started
+                            </button>
+                        </motion.div>
+                    )}
+                </AnimatePresence>
             </nav>
         </div>
     );
