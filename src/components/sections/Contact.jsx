@@ -11,11 +11,11 @@ const Contact = () => {
           className="grid grid-cols-1 md:grid-cols-2"
         >
           {/* left column */}
-          <div className="flex flex-col gap-1 items-start justify-between">
-            <p className="text-2xl md:text-5xl font-medium text-[#000] uppercase tracking-wide">
+          <div className="flex flex-col items-start gap-3">
+            <p className="text-2xl md:text-4xl font-medium text-[#000] uppercase">
               Get started <span className="text-[#982716]">today</span>
             </p>
-            <p className="text-xl md:text-5xl font-medium text-[#936F33] tracking-wide">
+            <p className="text-2xl md:text-4xl font-medium text-[#936F33]">
               First Class Discount
             </p>
             <p className="text-sm md:text-lg font-medium text-[#818181] tracking-wide">

@@ -26,12 +26,12 @@ function PlanCard({ plan, highlighted }) {
                 }`}
         >
             {plan.popular && (
-                <div className="absolute -top-4 left-5 bg-[#C0392B] text-white text-[13px] font-bold px-4 py-1 rounded-md">
+                <div className="absolute -top-4 left-5 bg-[#C0392B] text-white text-lg font-bold px-4 py-1 rounded-md">
                     Popular
                 </div>
             )}
 
-            <h2 className="text-white text-3xl font-bold mb-2 font-serif">
+            <h2 className="text-white text-2xl font-semibold mb-2 font-serif">
                 {plan.name}
             </h2>
             <p className="text-gray-300 text-sm mb-5 leading-relaxed">
@@ -53,7 +53,7 @@ function PlanCard({ plan, highlighted }) {
 
             <ul className="list-none p-0 m-0 space-y-3">
                 {plan.features.map((f, i) => (
-                    <li key={i} className="flex items-center text-gray-300 text-sm">
+                    <li key={i} className="flex items-center text-gray-300 text-normal">
                         <CheckIcon />
                         {f}
                     </li>

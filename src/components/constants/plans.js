@@ -44,7 +44,7 @@ export const plans = [
             "Personal trainer guidance",
             "Customized workout plan",
             "Basic diet & nutrition guidance",
-            "Priority access to equipment & peak hours",
+            "Priority access to equipment",
         ],
     },
 ];

@@ -22,7 +22,7 @@ export default function MobileFooter() {
                 className="hover:scale-105 transition-transform duration-300"
               />
 
-              <p className="text-slate-400 text-sm mt-2">
+              <p className="text-slate-400 text-normal mt-2">
                 Divine Gym is committed to helping you build a stronger,
                 healthier, and more confident version of yourself.
               </p>
@@ -53,7 +53,7 @@ export default function MobileFooter() {
                       {section.title}
                     </h3>
 
-                    <ul className="space-y-3 text-sm">
+                    <ul className="space-y-3 text-normal text-white">
                       {section.links.map((link) => (
                         <li key={link}>
                           <a href={`#${link.toLowerCase()}`}>{link}</a>

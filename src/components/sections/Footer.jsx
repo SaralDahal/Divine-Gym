@@ -19,7 +19,7 @@ export default function Footer() {
                 size={56}
                 className="hover:scale-105 transition-transform duration-300"
               />
-              <p className="text-slate-400 text-sm mt-2">
+              <p className="text-slate-400 text-lg mt-2">
                 Divine Gym is committed to helping you build a stronger,
                 healthier, and more confident version of yourself through expert
                 coaching, modern equipment, and a welcoming fitness community.
@@ -50,10 +50,10 @@ export default function Footer() {
             <div className="min-[1200px]:col-span-2 grid grid-cols-2 lg:grid-cols-3 gap-y-12 gap-x-6 sm:gap-x-8">
               {menuSections.map((section) => (
                 <div key={section.title} className="space-y-4">
-                  <h3 className="text-white pb-2 text-sm font-semibold">
+                  <h3 className="text-white pb-2 text-2xl font-semibold">
                     {section.title}
                   </h3>
-                  <ul className="space-y-4 text-sm text-white font-normal">
+                  <ul className="space-y-4 text-normal text-white-300">
                     {section.links.map((link) => (
                       <li key={link}>
                         <a
