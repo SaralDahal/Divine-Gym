@@ -18,7 +18,7 @@ export default function AboutPage() {
                         </span>
                     </div>
 
-                    <h1 className="text-lg md:text-2xl font-[Aldrich] font-black tracking-wider max-w-2xl uppercase">
+                    <h1 className="text-lg md:text-2xl font-black tracking-wider max-w-2xl uppercase">
                         Transforming bodies,
                         strengthening<br />
                         minds, shaping lifestyles.

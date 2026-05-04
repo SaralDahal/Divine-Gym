@@ -7,7 +7,7 @@ export default function Hero() {
         <>
             <section
                 id="home"
-                className="min-h-screen overflow-hidden">
+                className="min-h-screen overflow-hidden relative">
                 <Navbar />
 
                 {/* Background Image */}
@@ -18,7 +18,7 @@ export default function Hero() {
                 />
 
                 {/* Overlay */}
-                <div className="absolute inset-0 bg-black/50 -z-10" />
+                <div className="absolute inset-0 bg-black/50 -z-10"/>
 
                 {/* Content */}
                 <div className="container mx-auto px-8 w-full flex flex-col justify-evenly items-start h-screen">
@@ -41,7 +41,7 @@ export default function Hero() {
                             Divine, Where strength meets ambition
                         </p>
                         <div className="flex gap-1">
-                            <Button className="px-4 py-2 text-[#fff] font-[icebreg] bg-[#936F33] hover:scale-105 cursor-pointer transition-transform">
+                            <Button className="px-4 py-2 text-[#fff] bg-[#936F33] hover:scale-105 cursor-pointer transition-transform">
                                 Start Training
                             </Button>
                             <button className="px-4 py-2 text-[#fff] bg-[#982716] hover:scale-105 cursor-pointer transition-transform">
@@ -50,7 +50,7 @@ export default function Hero() {
                         </div>
                     </div>
                 </div>
-                <svg
+                {/* <svg
                     className="fixed w-full object-cover h-full z-0"
                     viewBox="0 0 1440 300"
                     fill="none"
@@ -60,7 +60,7 @@ export default function Hero() {
                         d="M0 0C0 0 120 150 360 150C600 150 720 0 960 0C1200 0 1320 150 1320 150C1320 150 1440 300 1440 300V717H0V0Z"
                         fill="#fff1"
                     />
-                </svg>
+                </svg> */}
             </section >
         </>
     );

@@ -8,23 +8,25 @@ export default function Footer() {
   return (
     <>
       <div className=" bg-[#0D2332] relative overflow-hidden">
-        <footer className="relative z-10 hidden md:block text-slate-50 font-[Alan Sans]">
-          <div className="container mx-auto px-10 py-4 md:py-16">
-          <div className="grid min-[1200px]:grid-cols-3 gap-12 xl:gap-12">
+        <footer className="container mx-auto px-10 py-4 md:py-16 relative z-10 hidden md:block text-slate-50">
+          <div className="grid min-[1200px]:grid-cols-3 gap-12 xl:gap-2">
             {/* Logo and Socials Column */}
             <div className="min-[1200px]:max-w-sm max-w-lg w-full">
+              <div className="font-semibold text-[#fff] tracking-narrow flex items-center gap-2">
               <Logo
                 href="#home"
                 alt="Divine Gym Home"
                 size={56}
                 className="hover:scale-105 transition-transform duration-300"
               />
+              Divine Gym
+              </div>
               <p className="text-slate-400 text-lg mt-2">
                 Divine Gym is committed to helping you build a stronger,
                 healthier, and more confident version of yourself through expert
                 coaching, modern equipment, and a welcoming fitness community.
               </p>
-              <ul className="flex flex-wrap gap-6 mt-6">
+              <ul className="flex flex-wrap gap-4 mt-6">
                 {socialLinks.map((social) => (
                   <li key={social.label}>
                     <a
@@ -47,13 +49,13 @@ export default function Footer() {
             </div>
 
             {/* Links Grid Column */}
-            <div className="min-[1200px]:col-span-2 grid grid-cols-2 lg:grid-cols-3 gap-y-12 gap-x-6 sm:gap-x-8">
+            <div className="min-[1200px]:col-span-2 grid grid-cols-2 lg:grid-cols-3 ">
               {menuSections.map((section) => (
                 <div key={section.title} className="space-y-4">
-                  <h3 className="text-white pb-2 text-2xl font-semibold">
+                  <h3 className="text-white text-2xl font-semibold">
                     {section.title}
                   </h3>
-                  <ul className="space-y-4 text-normal text-white-300">
+                  <ul className="space-y-2 text-normal text-white-300">
                     {section.links.map((link) => (
                       <li key={link}>
                         <a
@@ -92,15 +94,14 @@ export default function Footer() {
             </div>
           </div>
 
-          <hr className="my-8 border-neutral-700" />
+          <hr className="my-2 border-neutral-700" />
 
           {/* Footer Bottom */}
-          <div className="flex flex-wrap gap-4 flex-col">
+          <div className="flex flex-wrap gap-1 flex-col">
             <p className="text-slate-400 text-sm md:ml-auto">
               © Divine Gym. All rights reserved.
             </p>
           </div>
-        </div>
       </footer>
       </div>
       <MobileFooter />

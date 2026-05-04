@@ -10,17 +10,20 @@ export default function MobileFooter() {
     <div className=" bg-[#0D2332] relative overflow-hidden md:hidden">
 
       {/* MOBILE FOOTER ABOVE SVG */}
-      <footer className="relative z-10 text-slate-50 pt-24 font-[Alan Sans]">
+      <footer className="relative z-10 text-slate-50 pt-24">
         <div className="container mx-auto px-10 py-4">
           <div className="grid gap-12">
 
             <div>
-              <Logo
-                href="#home"
-                alt="Divine Gym Home"
-                size={40}
-                className="hover:scale-105 transition-transform duration-300"
-              />
+              <div className="font-semibold text-[#fff] tracking-narrow flex items-center gap-2">
+                <Logo
+                  href="#home"
+                  alt="Divine Gym Home"
+                  size={56}
+                  className="hover:scale-105 transition-transform duration-300"
+                />
+                Divine Gym
+              </div>
 
               <p className="text-slate-400 text-normal mt-2">
                 Divine Gym is committed to helping you build a stronger,
@@ -53,7 +56,7 @@ export default function MobileFooter() {
                       {section.title}
                     </h3>
 
-                    <ul className="space-y-3 text-normal text-white">
+                    <ul className="space-y-2 text-sm text-white">
                       {section.links.map((link) => (
                         <li key={link}>
                           <a href={`#${link.toLowerCase()}`}>{link}</a>

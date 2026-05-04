@@ -1,8 +1,8 @@
 const JoinPlan = () => {
     return (
         <div>
-            <div className="container mx-auto py-12 md:py-20 px-4 font-[Inter]">
-                <div className="text-center flex flex-col items-center gap-4">
+            <div className="bg-[#F5F5F5] ">
+                <div className="container mx-auto py-12 md:py-20 px-4 text-center flex flex-col items-center gap-4">
                     <h2 className="text-2xl md:text-4xl font-semibold text-[#982716] tracking-narrow">
                         Join Our Membership
                     </h2>

@@ -5,10 +5,10 @@ import WhatsappIcon from "../ui/WhatsappIcon";
 const Contact = () => {
   return (<>
         
-      <div className="container mx-auto px-10 pt-8 md:pt-16 font-[Alan Sans]">
+      <div className="bg-[#F5F5F5] relative overflow-hidden">
         <div
           id="contact"
-          className="grid grid-cols-1 md:grid-cols-2"
+          className="container mx-auto px-10 pt-8 md:pt-16 relative z-10 grid grid-cols-1 md:grid-cols-2"
         >
           {/* left column */}
           <div className="flex flex-col items-start gap-3">
@@ -52,7 +52,7 @@ const Contact = () => {
         </div>
       </div>
        <svg
-        className="top-0 left-0 w-full h-full z-0"
+        className="top-0 left-0 w-full h-full z-0 bg-[#F5F5F5]"
         viewBox="0 0 1440 300"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
