@@ -48,7 +48,7 @@ const Navbar = () => {
             <nav ref={navRef} className={`flex items-center justify-between border border-gray/60 mx-4 px-6 py-2 rounded-full text-white text-sm relative bg-black/20 backdrop-blur-md transition-all duration-500 ease-in-out ${hasScrolled ? 'w-full md:w-1/2 md:mx-auto' : 'w-full container mx-4'
                 }`}>
                 {/* Logo - Left */}
-                    <Logo />
+                <Logo />
 
 
                 {/* Desktop Links - Center */}
@@ -62,7 +62,7 @@ const Navbar = () => {
 
                 {/* Desktop Buttons - Right */}
                 <div className="hidden md:flex items-center gap-4 flex-shrink-0">
-                    <button className="bg-white hover:shadow-[0px_0px_30px_14px] shadow-[0px_0px_30px_7px] hover:shadow-white/50 shadow-white/50 text-black px-4 py-2 rounded-full text-sm font-medium hover:bg-slate-100 transition duration-300">
+                    <button className="bg-[#982716] hover:scale-105 cursor-pointer transition-transform text-black px-4 py-2 rounded-full text-sm font-medium transition duration-300">
                         Get Started
                     </button>
                 </div>
@@ -98,7 +98,7 @@ const Navbar = () => {
                                 {link}
                             </a>
                         ))}
-                        <button className="bg-white hover:shadow-[0px_0px_30px_14px] shadow-[0px_0px_15px_8px] hover:shadow-white/50 shadow-white/50 text-black px-4 py-2 rounded-full text-sm font-medium hover:bg-slate-100 transition duration-300">
+                        <button className="bg-[#982716] hover:scale-105 cursor-pointer transition-transform text-black px-4 py-2 rounded-full text-sm font-medium transition duration-300">
                             Get Started
                         </button>
                     </div>
