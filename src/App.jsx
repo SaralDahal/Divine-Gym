@@ -12,7 +12,7 @@ import Footer from "./components/sections/Footer";
 
 export default function App() {
   return (
-    <div>
+    <div className="overflow-hidden">
       {/* <Navbar /> */}
       <Hero />
       <Divider />
