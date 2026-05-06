@@ -63,9 +63,11 @@ const Navbar = () => {
 
                 {/* Desktop Buttons - Right */}
                 <div className="hidden md:flex items-center gap-4 flex-shrink-0">
-                    <button className="bg-[#982716] hover:scale-105 cursor-pointer transition-transform px-4 py-2 rounded-full text-sm font-medium transition duration-300">
-                        Get Started
-                    </button>
+                    <a href="#contact">
+                        <button className="bg-[#982716] hover:scale-105 cursor-pointer transition-transform px-4 py-2 rounded-full text-sm font-medium transition duration-300">
+                            Get Started
+                        </button>
+                    </a>
                 </div>
 
                 {/* Hamburger Button for mobile */}
@@ -108,10 +110,11 @@ const Navbar = () => {
                                     {link}
                                 </a>
                             ))}
-
-                            <button className="bg-[#982716] hover:scale-105 cursor-pointer transition-transform px-4 py-2 rounded-full text-sm font-medium duration-300">
-                                Get Started
-                            </button>
+                            <a href="#contact">
+                                <button className="bg-[#982716] hover:scale-105 cursor-pointer transition-transform px-4 py-2 rounded-full text-sm font-medium duration-300">
+                                    Get Started
+                                </button>
+                            </a>
                         </motion.div>
                     )}
                 </AnimatePresence>
