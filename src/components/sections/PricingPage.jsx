@@ -22,7 +22,7 @@ function CheckIcon() {
 function PlanCard({ plan, highlighted }) {
     return (
         <div
-            className={`relative flex-1 min-w-0 rounded-xl px-6 pt-7 pb-8 backdrop-blur-sm bg-black/55 ${highlighted ? "border-2 border-[#C0392B]" : "border border-white/15"
+            className={`relative flex-1 min-w-0 rounded-xl px-6 pt-7 pb-8 backdrop-blur-sm bg-black/55 scroll-mt-10 ${highlighted ? "border-2 border-[#C0392B]" : "border border-white/15"
                 }`}
         >
             {plan.popular && (

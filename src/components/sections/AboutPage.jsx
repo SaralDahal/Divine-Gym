@@ -1,10 +1,10 @@
 import { features } from "../constants/features";
-import dumbellDesktop from "../../assets/dumbell-desktop.png";
+import dumbellDesktop from "../../assets/dumbell.png";
 
 
 export default function AboutPage() {
     return (
-        <div id="about" className="min-h-screen bg-[#111111] text-white font-sans selection:bg-[#D13415]">
+        <div id="about" className="min-h-screen bg-[#111111] text-white font-sans scroll-mt-10">
             <div className="container mx-auto px-10 py-8 md:py-16 flex flex-col lg:flex-row items-center gap-16">
                 {/* Left Content Side */}
                 <div className="flex-1 space-y-8 z-10">
@@ -51,13 +51,13 @@ export default function AboutPage() {
                 </div>
 
                 {/* Right Collage Side */}
-                <div className="flex-1 relative w-full h-[500px] md:h-[600px] mt-12 lg:mt-0">
-                    <div className="absolute top-0 right-0 w-full h-full flex items-center justify-center">
+                <div className="flex-1 relative w-full h-[500px] md:h-[600px] md:mt-12 lg:mt-0">
+                    <div className="md:absolute top-0 right-0 w-full h-full flex items-center justify-center">
                         <div className="flex items-center justify-center">
                             <img
                                 src={dumbellDesktop}
                                 alt="Fitness 1"
-                                className="w-full h-full object-cover grayscale -rotate-[130deg] hover:grayscale-0 transition-all duration-500"
+                                className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
                             />
                         </div>
                     </div>
